@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "芈雅中乐学院 | 悉尼",
+    "description": "悉尼领先的中国音乐学校，提供传统乐器课程、乐团项目和文化活动，设有Chatswood和Burwood两个校区。"
+  },
+  "nav": {
+    "about": "关于我们",
+    "lessons": "音乐课程",
+    "teachers": "师资团队",
+    "orchestra": "加入乐团",
+    "events": "活动演出",
+    "shop": "商店",
+    "news": "新闻动态",
+    "booking": "预约试课",
+    "contact": "联系我们",
+    "career": "招聘",
+    "login": "登录",
+    "register": "注册",
+    "dashboard": "控制台",
+    "logout": "退出登录"
+  },
+  "home": {
+    "hero": {
+      "title": "发现中华音乐之美",
+      "subtitle": "悉尼芈雅中乐学院",
+      "cta": "预约免费试课",
+      "secondary": "探索我们的课程"
+    },
+    "intro": {
+      "title": "欢迎来到芈雅中乐学院",
+      "description": "我们是悉尼领先的中国音乐教育中心，致力于传承和分享传统中国乐器之美。在Chatswood和Burwood两个校区，我们为各年龄段、各水平的学生提供全面的音乐教育。",
+      "students": "在读学生",
+      "instruments": "教授乐器",
+      "years": "办学年份",
+      "campuses": "悉尼校区"
+    },
+    "courses": {
+      "title": "我们的音乐课程",
+      "subtitle": "跟随专业音乐家学习传统中国乐器",
+      "viewAll": "查看所有课程"
+    },
+    "events": {
+      "title": "近期活动",
+      "subtitle": "参加我们的演出、工作坊和文化庆典",
+      "viewAll": "查看所有活动"
+    },
+    "orchestra": {
+      "title": "加入我们的乐团",
+      "description": "体验合奏的魅力。我们的乐团汇聚各水平的学生，共同演奏传统和现代中国音乐。",
+      "cta": "了解更多"
+    },
+    "cta": {
+      "title": "今天就开始你的音乐之旅",
+      "description": "预约一节免费试课，发现中国音乐的乐趣。我们经验丰富的老师将全程指导你。",
+      "button": "预约免费试课"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "subtitle": "在澳大利亚传承中华音乐文化",
+    "mission": {
+      "title": "我们的使命",
+      "description": "芈雅中乐学院致力于在澳大利亚推广中国音乐文化和教育。我们努力通过音乐这门世界通用的语言，搭建东西方文化之间的桥梁。"
+    },
+    "campuses": {
+      "title": "我们的校区",
+      "chatswood": {
+        "name": "Chatswood 校区",
+        "address": "Chatswood, NSW",
+        "description": "我们的旗舰校区，提供全系列中国乐器课程，配备现代化练习室和演出空间。"
+      },
+      "burwood": {
+        "name": "Burwood 校区",
+        "address": "Burwood, NSW",
+        "description": "我们的第二校区，为悉尼内西区的学生提供便捷的教学服务，设有专用教学工作室。"
+      }
+    },
+    "values": {
+      "title": "我们的价值观",
+      "excellence": "卓越教学",
+      "excellenceDesc": "每位教师都是经过专业训练的音乐家，拥有多年演出和教学经验。",
+      "culture": "文化传承",
+      "cultureDesc": "我们尊重中国音乐的丰富传统，同时拥抱现代教学方法。",
+      "community": "社区建设",
+      "communityDesc": "我们通过音乐会、工作坊和文化活动，培育充满活力的音乐爱好者社区。"
+    }
+  },
+  "teachers": {
+    "title": "师资团队",
+    "subtitle": "向经验丰富的音乐家和教育者学习",
+    "instruments": "教授乐器",
+    "readMore": "了解更多",
+    "back": "返回师资页面"
+  },
+  "lessons": {
+    "title": "音乐课程",
+    "subtitle": "探索两个校区的传统中国乐器课程",
+    "chatswood": "Chatswood 校区",
+    "burwood": "Burwood 校区",
+    "bookTrial": "预约试课",
+    "perLesson": "每节课",
+    "duration": "分钟",
+    "availableTeachers": "可选教师",
+    "back": "返回课程页面",
+    "allLevels": "欢迎各水平学生",
+    "beginner": "初级",
+    "intermediate": "中级",
+    "advanced": "高级"
+  },
+  "orchestra": {
+    "title": "加入我们的乐团",
+    "subtitle": "体验中国管弦乐的魅力",
+    "about": {
+      "title": "关于我们的乐团",
+      "description": "芈雅中乐团是一个充满活力的合奏团体，由学生和专业音乐家组成，共同庆祝和演奏传统中国管弦乐。我们欢迎各水平的音乐家加入我们的大家庭。"
+    },
+    "benefits": {
+      "title": "为什么加入？",
+      "ensemble": "合奏体验",
+      "ensembleDesc": "在支持性的环境中与其他音乐家一起演奏，提升你的合奏技能。",
+      "performance": "演出机会",
+      "performanceDesc": "在悉尼各地的音乐会、社区活动和文化节上演出。",
+      "growth": "音乐成长",
+      "growthDesc": "拓展你的曲目库，深入理解中国管弦乐。"
+    },
+    "apply": {
+      "title": "如何加入",
+      "description": "我们全年举行面试。无论你的水平如何，我们的乐团大家庭都有你的位置。",
+      "cta": "立即申请"
+    }
+  },
+  "events": {
+    "title": "活动与演出",
+    "subtitle": "音乐会、工作坊和文化庆典",
+    "upcoming": "即将举行",
+    "past": "往期活动",
+    "date": "日期",
+    "venue": "地点",
+    "tickets": "购票",
+    "free": "免费入场",
+    "register": "报名",
+    "details": "活动详情",
+    "back": "返回活动页面"
+  },
+  "shop": {
+    "title": "商品展示",
+    "subtitle": "我们精心提供传统中国乐器供选购，适合初学者和资深音乐家。",
+    "instruments": "乐器销售",
+    "hanfu": "汉服租赁",
+    "performanceWear": "演出服装",
+    "practiceRoom": "琴房租赁",
+    "viewDetails": "查看详情",
+    "addToCart": "加入购物车",
+    "inquire": "咨询",
+    "price": "价格",
+    "rental": "租赁",
+    "purchase": "购买",
+    "custom": "定制",
+    "back": "返回商店"
+  },
+  "news": {
+    "title": "新闻动态",
+    "subtitle": "了解芈雅中乐学院的最新消息",
+    "readMore": "阅读更多",
+    "back": "返回新闻页面",
+    "published": "发布于"
+  },
+  "booking": {
+    "title": "预约试课",
+    "subtitle": "通过免费试课体验中国音乐的乐趣",
+    "steps": {
+      "instrument": "选择乐器",
+      "teacher": "选择教师",
+      "time": "选择时间",
+      "info": "填写信息",
+      "confirm": "确认预约"
+    },
+    "form": {
+      "name": "姓名",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "age": "学生年龄",
+      "experience": "音乐经验",
+      "noExperience": "无经验",
+      "someExperience": "有一些经验",
+      "experienced": "经验丰富",
+      "message": "补充说明",
+      "campus": "首选校区",
+      "submit": "提交预约",
+      "success": "感谢您！我们将在24小时内联系您确认试课安排。",
+      "parentName": "家长/监护人姓名",
+      "parentPhone": "家长/监护人电话"
+    },
+    "next": "下一步",
+    "prev": "上一步",
+    "back": "返回预约"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "与我们取得联系",
+    "form": {
+      "name": "您的姓名",
+      "email": "您的邮箱",
+      "subject": "主题",
+      "message": "留言内容",
+      "send": "发送消息",
+      "success": "感谢您的留言！我们会尽快回复您。"
+    },
+    "campuses": "校区地址",
+    "phone": "电话",
+    "email": "邮箱",
+    "hours": "营业时间",
+    "social": "关注我们"
+  },
+  "career": {
+    "title": "加入我们的团队",
+    "subtitle": "我们正在寻找充满热情的音乐家和教育者",
+    "openPositions": "开放职位",
+    "apply": "立即申请",
+    "noPositions": "目前暂无开放职位，请稍后再来查看！",
+    "whyJoin": "为什么选择芈雅？",
+    "benefits": {
+      "growth": "职业发展",
+      "growthDesc": "持续的学习机会和专业发展支持。",
+      "community": "活力社区",
+      "communityDesc": "加入一个致力于中国音乐教育的热情团队。",
+      "flexible": "弹性排班",
+      "flexibleDesc": "适合您生活方式和教学偏好的工作安排。"
+    }
+  },
+  "login": {
+    "title": "欢迎回来",
+    "email": "电子邮箱",
+    "password": "密码",
+    "submit": "登录",
+    "forgotPassword": "忘记密码？",
+    "noAccount": "还没有账号？",
+    "register": "立即注册"
+  },
+  "register": {
+    "title": "创建账号",
+    "name": "姓名",
+    "email": "电子邮箱",
+    "phone": "电话号码",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "role": "我是",
+    "student": "学生",
+    "parent": "家长",
+    "submit": "创建账号",
+    "hasAccount": "已有账号？",
+    "login": "立即登录"
+  },
+  "footer": {
+    "tagline": "发现中华音乐之美，尽在澳大利亚芈雅中乐学院。",
+    "quickLinks": "快速链接",
+    "followUs": "关注我们",
+    "copyright": "芈雅中乐学院 版权所有",
+    "address": "地址",
+    "phone": "电话",
+    "email": "邮箱"
+  },
+  "common": {
+    "learnMore": "了解更多",
+    "viewAll": "查看全部",
+    "backToTop": "返回顶部",
+    "loading": "加载中...",
+    "error": "出错了",
+    "noResults": "未找到结果"
+  },
+  "performanceHire": {
+    "title": "演出租赁",
+    "subtitle": "为您的活动带来正宗的中国音乐",
+    "description": "我们才华横溢的音乐家可以为婚礼、企业活动、文化节和私人聚会提供演出服务。我们提供独奏、小型合奏和完整乐团预约。",
+    "inquire": "获取报价",
+    "services": {
+      "solo": "独奏演出",
+      "soloDesc": "一位音乐家使用您选择的传统乐器进行演奏。",
+      "ensemble": "小型合奏",
+      "ensembleDesc": "3-5位音乐家组成的小组，带来亲密的音乐体验。",
+      "orchestra": "完整乐团",
+      "orchestraDesc": "我们的完整乐团，带来盛大、沉浸式的演出体验。"
+    }
+  }
+}

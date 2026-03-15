@@ -11,7 +11,14 @@
       "Bash(cd:*)",
       "Bash(# Copy missing files/dirs individually\ncp /c/Users/User/Site/musicstudy-new/package.json /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/package-lock.json /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/tsconfig.json /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/postcss.config.mjs /c/Users/User/Site/musicstudy/\ncp -r /c/Users/User/Site/musicstudy-new/src /c/Users/User/Site/musicstudy/\ncp -r /c/Users/User/Site/musicstudy-new/public /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/.gitignore /c/Users/User/Site/musicstudy/ 2>/dev/null\nrm -rf /c/Users/User/Site/musicstudy-new\necho \"Done\")",
       "Bash(npm install:*)",
-      "Bash(npx:*)"
+      "Bash(npx:*)",
+      "Bash(ls:*)",
+      "Bash(npm run:*)",
+      "Bash(find /c/Users/User/Site/musicstudy/src/app/[locale]/dashboard/teacher -name *.tsx)",
+      "Read(//c/Users/User/Site/musicstudy/**)",
+      "Bash(find /c/Users/User/Site/musicstudy/src/app/[locale]/dashboard/student -name *.tsx)",
+      "Bash(find /c/Users/User/Site/musicstudy/src/app/[locale]/dashboard/admin -name *.tsx)",
+      "Bash(grep:*)"
     ]
   }
 }

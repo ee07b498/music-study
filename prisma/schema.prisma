@@ -1,0 +1,302 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ============================================================
+// Auth & User Models
+// ============================================================
+
+enum Role {
+  ADMIN
+  TEACHER
+  STUDENT
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  password      String
+  name          String
+  nameZh        String?
+  role          Role      @default(STUDENT)
+  phone         String?
+  avatar        String?
+  lang          String    @default("en")
+  active        Boolean   @default(true)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  teacher       Teacher?
+  student       Student?
+  notifications Notification[]
+
+  @@map("users")
+}
+
+// ============================================================
+// Teacher & Student Profiles
+// ============================================================
+
+model Teacher {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bio         String?  @db.Text
+  bioZh       String?  @db.Text
+  slug        String   @unique
+  campuses    String[]
+  image       String?
+
+  instruments TeacherInstrument[]
+  courses     Course[]
+  schedules   Schedule[]
+  lessons     Lesson[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("teachers")
+}
+
+model Student {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  parentName  String?
+  parentPhone String?
+  age         Int?
+  level       String?
+
+  bookings    Booking[]
+  lessons     Lesson[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("students")
+}
+
+// ============================================================
+// Instruments & Courses
+// ============================================================
+
+model Instrument {
+  id            String   @id @default(cuid())
+  name          String   @unique
+  nameZh        String
+  slug          String   @unique
+  icon          String?
+  description   String?  @db.Text
+  descriptionZh String?  @db.Text
+
+  teachers      TeacherInstrument[]
+  courses       Course[]
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@map("instruments")
+}
+
+model TeacherInstrument {
+  id           String     @id @default(cuid())
+  teacherId    String
+  teacher      Teacher    @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  instrumentId String
+  instrument   Instrument @relation(fields: [instrumentId], references: [id], onDelete: Cascade)
+
+  @@unique([teacherId, instrumentId])
+  @@map("teacher_instruments")
+}
+
+model Course {
+  id             String     @id @default(cuid())
+  instrumentId   String
+  instrument     Instrument @relation(fields: [instrumentId], references: [id])
+  teacherId      String
+  teacher        Teacher    @relation(fields: [teacherId], references: [id])
+  campus         String
+  pricePerLesson Float
+  duration       Int        @default(30)
+  active         Boolean    @default(true)
+
+  bookings       Booking[]
+
+  createdAt      DateTime   @default(now())
+  updatedAt      DateTime   @updatedAt
+
+  @@map("courses")
+}
+
+// ============================================================
+// Scheduling & Booking
+// ============================================================
+
+model Schedule {
+  id          String   @id @default(cuid())
+  teacherId   String
+  teacher     Teacher  @relation(fields: [teacherId], references: [id], onDelete: Cascade)
+  dayOfWeek   Int
+  startTime   String
+  endTime     String
+  isAvailable Boolean  @default(true)
+
+  bookings    Booking[]
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@map("schedules")
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+model Booking {
+  id         String        @id @default(cuid())
+  studentId  String
+  student    Student       @relation(fields: [studentId], references: [id])
+  courseId   String
+  course     Course        @relation(fields: [courseId], references: [id])
+  scheduleId String?
+  schedule   Schedule?     @relation(fields: [scheduleId], references: [id])
+  date       DateTime
+  status     BookingStatus @default(PENDING)
+  notes      String?       @db.Text
+  isTrial    Boolean       @default(false)
+
+  lesson     Lesson?
+
+  createdAt  DateTime      @default(now())
+  updatedAt  DateTime      @updatedAt
+
+  @@map("bookings")
+}
+
+// ============================================================
+// Lesson Records
+// ============================================================
+
+enum LessonStatus {
+  SCHEDULED
+  COMPLETED
+  MISSED
+  CANCELLED
+}
+
+model Lesson {
+  id         String       @id @default(cuid())
+  bookingId  String?      @unique
+  booking    Booking?     @relation(fields: [bookingId], references: [id])
+  teacherId  String
+  teacher    Teacher      @relation(fields: [teacherId], references: [id])
+  studentId  String
+  student    Student      @relation(fields: [studentId], references: [id])
+  date       DateTime
+  status     LessonStatus @default(SCHEDULED)
+  notes      String?      @db.Text
+  homework   String?      @db.Text
+  rating     Int?
+
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+
+  @@map("lessons")
+}
+
+// ============================================================
+// Events
+// ============================================================
+
+model Event {
+  id            String   @id @default(cuid())
+  title         String
+  titleZh       String?
+  slug          String   @unique
+  date          DateTime
+  endDate       DateTime?
+  time          String?
+  venue         String
+  venueZh       String?
+  description   String?  @db.Text
+  descriptionZh String?  @db.Text
+  image         String?
+  ticketPrice   Float?
+  ticketUrl     String?
+  published     Boolean  @default(false)
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@map("events")
+}
+
+// ============================================================
+// Shop Products
+// ============================================================
+
+enum ProductCategory {
+  INSTRUMENT
+  HANFU
+  PERFORMANCE_WEAR
+  PRACTICE_ROOM
+  OTHER
+}
+
+model Product {
+  id            String          @id @default(cuid())
+  name          String
+  nameZh        String?
+  slug          String          @unique
+  category      ProductCategory
+  price         Float?
+  rentalPrice   Float?
+  description   String?         @db.Text
+  descriptionZh String?         @db.Text
+  images        String[]
+  customizable  Boolean         @default(false)
+  active        Boolean         @default(true)
+
+  createdAt     DateTime        @default(now())
+  updatedAt     DateTime        @updatedAt
+
+  @@map("products")
+}
+
+// ============================================================
+// Notifications
+// ============================================================
+
+enum NotificationType {
+  BOOKING
+  LESSON
+  PAYMENT
+  SYSTEM
+  EVENT
+}
+
+model Notification {
+  id        String           @id @default(cuid())
+  userId    String
+  user      User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  type      NotificationType
+  title     String
+  titleZh   String?
+  message   String           @db.Text
+  messageZh String?          @db.Text
+  read      Boolean          @default(false)
+
+  createdAt DateTime         @default(now())
+
+  @@index([userId, read])
+  @@map("notifications")
+}

@@ -1,0 +1,285 @@
+{
+  "meta": {
+    "title": "Meya Conservatory of Chinese Music | Sydney",
+    "description": "Sydney's premier Chinese music school offering traditional instrument lessons, orchestra programs, and cultural events across Chatswood and Burwood campuses."
+  },
+  "nav": {
+    "about": "About Us",
+    "lessons": "Music Lessons",
+    "teachers": "Our Teachers",
+    "orchestra": "Join Our Orchestra",
+    "events": "Events",
+    "shop": "Shop",
+    "news": "News",
+    "booking": "Book a Trial",
+    "contact": "Contact Us",
+    "career": "Career",
+    "login": "Login",
+    "register": "Register",
+    "dashboard": "Dashboard",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover the Beautiful Melody of Great China",
+      "subtitle": "Sydney Meya Conservatory of Chinese Music",
+      "cta": "Book a Free Trial Lesson",
+      "secondary": "Explore Our Courses"
+    },
+    "intro": {
+      "title": "Welcome to Meya Conservatory",
+      "description": "We are Sydney's leading Chinese music education centre, dedicated to preserving and sharing the beauty of traditional Chinese instruments. With two campuses in Chatswood and Burwood, we offer comprehensive music education for students of all ages and levels.",
+      "students": "Students Enrolled",
+      "instruments": "Instruments Taught",
+      "years": "Years of Excellence",
+      "campuses": "Sydney Campuses"
+    },
+    "courses": {
+      "title": "Our Music Lessons",
+      "subtitle": "Learn traditional Chinese instruments from master musicians",
+      "viewAll": "View All Courses"
+    },
+    "events": {
+      "title": "Upcoming Events",
+      "subtitle": "Join us for performances, workshops, and cultural celebrations",
+      "viewAll": "View All Events"
+    },
+    "orchestra": {
+      "title": "Join Our Orchestra",
+      "description": "Experience the power of ensemble playing. Our orchestra brings together students of all levels to perform traditional and contemporary Chinese music.",
+      "cta": "Learn More"
+    },
+    "cta": {
+      "title": "Start Your Musical Journey Today",
+      "description": "Book a free trial lesson and discover the joy of Chinese music. Our experienced teachers will guide you every step of the way.",
+      "button": "Book a Free Trial"
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Preserving Chinese Musical Heritage in Australia",
+    "mission": {
+      "title": "Our Mission",
+      "description": "The Meya Conservatory of Chinese Music is dedicated to promoting Chinese music culture and education in Australia. We strive to build a bridge between Eastern and Western cultures through the universal language of music."
+    },
+    "campuses": {
+      "title": "Our Campuses",
+      "chatswood": {
+        "name": "Chatswood Campus",
+        "address": "Chatswood, NSW",
+        "description": "Our flagship campus offering the full range of Chinese instruments with modern practice rooms and performance spaces."
+      },
+      "burwood": {
+        "name": "Burwood Campus",
+        "address": "Burwood, NSW",
+        "description": "Our second campus providing convenient access for students in Sydney's inner west, with dedicated teaching studios."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "excellence": "Excellence in Teaching",
+      "excellenceDesc": "Every instructor is a professionally trained musician with years of performance and teaching experience.",
+      "culture": "Cultural Preservation",
+      "cultureDesc": "We honour the rich traditions of Chinese music while embracing modern teaching methods.",
+      "community": "Community Building",
+      "communityDesc": "We foster a vibrant community of music lovers through concerts, workshops, and cultural events."
+    }
+  },
+  "teachers": {
+    "title": "Meet Our Teachers",
+    "subtitle": "Learn from experienced musicians and educators",
+    "instruments": "Instruments",
+    "readMore": "Read More",
+    "back": "Back to Teachers"
+  },
+  "lessons": {
+    "title": "Our Music Lessons",
+    "subtitle": "Explore traditional Chinese instruments across two campuses",
+    "chatswood": "Chatswood Campus",
+    "burwood": "Burwood Campus",
+    "bookTrial": "Book a Trial Lesson",
+    "perLesson": "per lesson",
+    "duration": "minutes",
+    "availableTeachers": "Available Teachers",
+    "back": "Back to Lessons",
+    "allLevels": "All Levels Welcome",
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "orchestra": {
+    "title": "Join Our Orchestra",
+    "subtitle": "Experience the magic of Chinese orchestral music",
+    "about": {
+      "title": "About Our Orchestra",
+      "description": "The Meya Chinese Orchestra is a vibrant ensemble of students and professional musicians who come together to celebrate and perform traditional Chinese orchestral music. We welcome musicians of all levels to join our community."
+    },
+    "benefits": {
+      "title": "Why Join?",
+      "ensemble": "Ensemble Experience",
+      "ensembleDesc": "Play alongside other musicians and develop your ensemble skills in a supportive environment.",
+      "performance": "Performance Opportunities",
+      "performanceDesc": "Perform at concerts, community events, and cultural festivals throughout Sydney.",
+      "growth": "Musical Growth",
+      "growthDesc": "Expand your repertoire and deepen your understanding of Chinese orchestral music."
+    },
+    "apply": {
+      "title": "How to Join",
+      "description": "We hold auditions throughout the year. No matter your level, there's a place for you in our orchestra family.",
+      "cta": "Apply Now"
+    }
+  },
+  "events": {
+    "title": "Events & Performances",
+    "subtitle": "Concerts, workshops, and cultural celebrations",
+    "upcoming": "Upcoming Events",
+    "past": "Past Events",
+    "date": "Date",
+    "venue": "Venue",
+    "tickets": "Get Tickets",
+    "free": "Free Entry",
+    "register": "Register",
+    "details": "Event Details",
+    "back": "Back to Events"
+  },
+  "shop": {
+    "title": "Shop Our Products",
+    "subtitle": "We proudly offer a curated selection of traditional Chinese musical instruments for purchase, catering to both beginners and seasoned musicians.",
+    "instruments": "Musical Instruments",
+    "hanfu": "Hanfu Rental",
+    "performanceWear": "Performance Wear",
+    "practiceRoom": "Practice Room Rental",
+    "viewDetails": "View Details",
+    "addToCart": "Add to Cart",
+    "inquire": "Inquire",
+    "price": "Price",
+    "rental": "Rental",
+    "purchase": "Purchase",
+    "custom": "Custom Order",
+    "back": "Back to Shop"
+  },
+  "news": {
+    "title": "News & Updates",
+    "subtitle": "Stay updated with the latest from Meya Conservatory",
+    "readMore": "Read More",
+    "back": "Back to News",
+    "published": "Published"
+  },
+  "booking": {
+    "title": "Book a Trial Lesson",
+    "subtitle": "Experience the joy of Chinese music with a free trial lesson",
+    "steps": {
+      "instrument": "Choose Instrument",
+      "teacher": "Choose Teacher",
+      "time": "Choose Time",
+      "info": "Your Information",
+      "confirm": "Confirm"
+    },
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "age": "Student Age",
+      "experience": "Musical Experience",
+      "noExperience": "No prior experience",
+      "someExperience": "Some experience",
+      "experienced": "Experienced",
+      "message": "Additional Message",
+      "campus": "Preferred Campus",
+      "submit": "Submit Booking",
+      "success": "Thank you! We'll contact you within 24 hours to confirm your trial lesson.",
+      "parentName": "Parent/Guardian Name",
+      "parentPhone": "Parent/Guardian Phone"
+    },
+    "next": "Next",
+    "prev": "Previous",
+    "back": "Back to Booking"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "success": "Thank you for your message! We'll get back to you soon."
+    },
+    "campuses": "Our Locations",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening Hours",
+    "social": "Follow Us"
+  },
+  "career": {
+    "title": "Join Our Team",
+    "subtitle": "We're looking for passionate musicians and educators",
+    "openPositions": "Open Positions",
+    "apply": "Apply Now",
+    "noPositions": "No open positions at the moment. Check back soon!",
+    "whyJoin": "Why Join Meya?",
+    "benefits": {
+      "growth": "Professional Growth",
+      "growthDesc": "Continuous learning opportunities and professional development support.",
+      "community": "Vibrant Community",
+      "communityDesc": "Join a passionate team dedicated to Chinese music education.",
+      "flexible": "Flexible Schedule",
+      "flexibleDesc": "Work arrangements that suit your lifestyle and teaching preferences."
+    }
+  },
+  "login": {
+    "title": "Welcome Back",
+    "email": "Email Address",
+    "password": "Password",
+    "submit": "Sign In",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "register": "Register here"
+  },
+  "register": {
+    "title": "Create Account",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "role": "I am a",
+    "student": "Student",
+    "parent": "Parent",
+    "submit": "Create Account",
+    "hasAccount": "Already have an account?",
+    "login": "Sign in here"
+  },
+  "footer": {
+    "tagline": "Discover the Beautiful Melody of Great China, all in Meya Music of Australia.",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us on Social Media",
+    "copyright": "Meya Conservatory of Chinese Music. All rights reserved.",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "backToTop": "Back to Top",
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "noResults": "No results found"
+  },
+  "performanceHire": {
+    "title": "Performance Hire",
+    "subtitle": "Bring authentic Chinese music to your event",
+    "description": "Our talented musicians are available for performances at weddings, corporate events, cultural festivals, and private functions. We offer solo performances, small ensembles, and full orchestra bookings.",
+    "inquire": "Request a Quote",
+    "services": {
+      "solo": "Solo Performance",
+      "soloDesc": "A single musician performing on your choice of traditional instrument.",
+      "ensemble": "Small Ensemble",
+      "ensembleDesc": "A group of 3-5 musicians for an intimate musical experience.",
+      "orchestra": "Full Orchestra",
+      "orchestraDesc": "Our complete orchestra for a grand, immersive performance."
+    }
+  }
+}
