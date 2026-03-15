@@ -1,8 +1,7 @@
 'use client';
 
 import { ReactNode, useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
+import { Link, usePathname } from '@/i18n/navigation';
 import { cn } from '@/lib/utils';
 import {
   LayoutDashboard, Calendar, Users, BookOpen, Bell,
