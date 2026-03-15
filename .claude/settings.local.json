@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.meyamusicsydney.com)",
+      "Bash(npx playwright:*)",
+      "Bash(node:*)",
+      "Bash(npm init:*)",
+      "Bash(mkdir:*)",
+      "Read(//c/Users/User/Site/**)",
+      "Bash(npx create-next-app@latest musicstudy-new --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "Bash(cd:*)",
+      "Bash(# Copy missing files/dirs individually\ncp /c/Users/User/Site/musicstudy-new/package.json /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/package-lock.json /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/tsconfig.json /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/postcss.config.mjs /c/Users/User/Site/musicstudy/\ncp -r /c/Users/User/Site/musicstudy-new/src /c/Users/User/Site/musicstudy/\ncp -r /c/Users/User/Site/musicstudy-new/public /c/Users/User/Site/musicstudy/\ncp /c/Users/User/Site/musicstudy-new/.gitignore /c/Users/User/Site/musicstudy/ 2>/dev/null\nrm -rf /c/Users/User/Site/musicstudy-new\necho \"Done\")",
+      "Bash(npm install:*)",
+      "Bash(npx:*)"
+    ]
+  }
+}
