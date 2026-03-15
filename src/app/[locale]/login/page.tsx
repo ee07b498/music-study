@@ -1,22 +1,61 @@
 'use client';
 
 import { useState } from 'react';
+import { signIn } from 'next-auth/react';
 import { useLocale } from 'next-intl';
+import { useRouter } from '@/i18n/navigation';
 import { Link } from '@/i18n/navigation';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { LogIn } from 'lucide-react';
+import { LogIn, Loader2 } from 'lucide-react';
 
 export default function LoginPage() {
   const locale = useLocale();
+  const router = useRouter();
   const isZh = locale === 'zh';
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    setError('');
+    setLoading(true);
+
+    try {
+      const result = await signIn('credentials', {
+        email,
+        password,
+        redirect: false,
+      });
+
+      if (result?.error) {
+        setError(isZh ? '邮箱或密码错误' : 'Invalid email or password');
+        setLoading(false);
+        return;
+      }
+
+      // Fetch session to get role
+      const res = await fetch('/api/auth/session');
+      const session = await res.json();
+      const role = session?.user?.role;
+
+      if (role === 'ADMIN') {
+        router.push('/dashboard/admin');
+      } else if (role === 'TEACHER') {
+        router.push('/dashboard/teacher');
+      } else if (role === 'STUDENT') {
+        router.push('/dashboard/student');
+      } else {
+        router.push('/');
+      }
+    } catch {
+      setError(isZh ? '登录失败，请重试' : 'Login failed, please try again');
+      setLoading(false);
+    }
   }
 
   return (
@@ -34,6 +73,12 @@ export default function LoginPage() {
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-5">
+            {error && (
+              <div className="rounded-md bg-red-50 border border-red-200 p-3 text-sm text-red-600">
+                {error}
+              </div>
+            )}
+
             <div>
               <label className="mb-1.5 block text-sm font-medium">
                 {isZh ? '邮箱' : 'Email'}
@@ -60,9 +105,15 @@ export default function LoginPage() {
               />
             </div>
 
-            <Button type="submit" size="lg" className="w-full">
-              <LogIn className="mr-2 size-4" />
-              {isZh ? '登录' : 'Sign In'}
+            <Button type="submit" size="lg" className="w-full" disabled={loading}>
+              {loading ? (
+                <Loader2 className="mr-2 size-4 animate-spin" />
+              ) : (
+                <LogIn className="mr-2 size-4" />
+              )}
+              {loading
+                ? (isZh ? '登录中...' : 'Signing in...')
+                : (isZh ? '登录' : 'Sign In')}
             </Button>
           </form>
 

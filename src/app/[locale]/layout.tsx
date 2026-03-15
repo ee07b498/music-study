@@ -4,6 +4,7 @@ import { Playfair_Display, Noto_Serif_SC } from 'next/font/google';
 import { routing } from '@/i18n/routing';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import SessionProvider from '@/components/providers/SessionProvider';
 import '../globals.css';
 
 const playfair = Playfair_Display({
@@ -36,13 +37,15 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${playfair.variable} ${notoSerifSC.variable}`}>
       <body className="min-h-screen bg-background text-foreground font-serif antialiased">
-        <NextIntlClientProvider>
-          <div id="site-header"><Header /></div>
-          <main className="min-h-screen">
-            {children}
-          </main>
-          <div id="site-footer"><Footer /></div>
-        </NextIntlClientProvider>
+        <SessionProvider>
+          <NextIntlClientProvider>
+            <div id="site-header"><Header /></div>
+            <main className="min-h-screen">
+              {children}
+            </main>
+            <div id="site-footer"><Footer /></div>
+          </NextIntlClientProvider>
+        </SessionProvider>
       </body>
     </html>
   );
